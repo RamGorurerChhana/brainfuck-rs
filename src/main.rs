@@ -1,3 +1,6 @@
+use brainfuck_rs::Interpreter;
+
 fn main() {
-    println!("Hello, world!");
+    let input = "+++++++++[>++++++++>+++++++++++>++++>++++++++++++<<<<-]>.>++.>>..+++.<----.>+++++.<<+++.---.>>--.<<.>+.";
+    Interpreter::new(input.to_string()).run();
 }
